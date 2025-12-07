@@ -1,0 +1,3 @@
+Cenário 1: 26
+Cenário 2: 11
+Cenário 3: 20

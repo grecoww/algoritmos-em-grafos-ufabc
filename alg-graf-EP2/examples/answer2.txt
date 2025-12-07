@@ -1,0 +1,4 @@
+Cenário 1: 4
+Cenário 2: 15
+Cenário 3: 3
+Cenário 4: -1
