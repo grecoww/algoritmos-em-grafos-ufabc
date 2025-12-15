@@ -102,7 +102,7 @@ while(True):
     m,n = map(int, input().split())
     if not (0<=m<=100 and 0<=n<=1000):
         raise ValueError("invalid value interval for n or m")
-    if m==0:
+    if m==0 and n==0:
         break
 
     tasks = []
