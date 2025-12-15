@@ -76,7 +76,7 @@ def viableSchedule(machines, tasks):
 
     # fonte -> tarefas
     for i, (p, _, _) in enumerate(tasks):
-        work = ceil(p * SCALE)
+        work = ceil(p * SCALE) # arredonda pra cima
         total_work += work
         add_edge(graph, S, 1 + i, work)
 
@@ -90,7 +90,7 @@ def viableSchedule(machines, tasks):
 
     # intervalos -> sorvedouro
     for j, (a, b) in enumerate(intervals):
-        dur = floor((b - a) * SCALE)
+        dur = floor((b - a) * SCALE) # arredonda pra baixo
         add_edge(graph, 1 + n + j, T, machines * dur)
 
     flow = edmonds_karp(graph, S, T)
