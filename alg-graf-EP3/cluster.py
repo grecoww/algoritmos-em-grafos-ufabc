@@ -99,15 +99,15 @@ def viableSchedule(machines, tasks):
 
 count=1
 while(True):
-    n, m = map(int, input().split())
-    if not (0<=n<=100 and 0<=m<=1000):
+    m,n = map(int, input().split())
+    if not (0<=m<=100 and 0<=n<=1000):
         raise ValueError("invalid value interval for n or m")
-    if n==0:
+    if m==0:
         break
 
     tasks = []
 
-    for _ in range(m):
+    for _ in range(n):
         p,r,d = input().split()
         p = float(p)
         r = int(r)
